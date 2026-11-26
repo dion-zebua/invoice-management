@@ -153,8 +153,10 @@ Untuk mendukung fungsionalitas di atas, rancangan tabel MySQL yang dibutuhkan me
 - `client_name` (VARCHAR)
 - `client_company` (VARCHAR)
 - `client_phone` (VARCHAR)
+- `sub_total` (DECIMAL/BIGINT)
 - `tax` (BOOLEAN, Default: false)
-- `total_amount` (DECIMAL/BIGINT)
+- `discount` (DECIMAL/BIGINT)
+- `grand_total` (DECIMAL/BIGINT)
 - `down_payment` (DECIMAL/BIGINT)
 - `remaining_balance` (DECIMAL/BIGINT)
 - `status` (ENUM: 'paid', 'unpaid')
@@ -169,7 +171,7 @@ Untuk mendukung fungsionalitas di atas, rancangan tabel MySQL yang dibutuhkan me
 - `unit` (VARCHAR)
 - `price` (DECIMAL/BIGINT)
 - `quantity` (INT)
-- `subtotal` (DECIMAL/BIGINT)
+- `amount` (DECIMAL/BIGINT)
 - `created_at`, `updated_at`
 
 #
